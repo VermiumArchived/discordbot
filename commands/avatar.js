@@ -1,30 +1,27 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { SlashCommandBuilder } = require("@discordjs/builders");
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName('avatar')
-        .setDescription('Avatar')
-        .addUserOption(option => option.setName('user').setDescription('Select a user')),
+  data: new SlashCommandBuilder()
+    .setName("avatar")
+    .setDescription("Check someones avatar")
+    .addUserOption((option) =>
+      option.setName("user").setDescription("Select a user to check")
+    ),
 
-    async execute(interaction) {
-
-        const botAvatar = interaction.client.user.displayAvatarURL();
-
-        const user = interaction.options.getUser('user') || interaction.user;
-
-        const embed = {
-            color: 0x0099ff,
-            title: user.username + "'s Avatar",
-            image: {
-                url: user.avatarURL(),
-            },
-            timestamp: new Date(),
-            footer: {
-                text: 'Made by Zyner',
-                icon_url: botAvatar,
-            },
-        };
-
-        await interaction.reply({ embeds: [embed] });
-    },
+  async execute(interaction) {
+    const user = interaction.options.getUser("user") || interaction.user;
+    const embed = {
+      color: 0x76c7b4,
+      title: user.username + "'s Avatar",
+      image: {
+        url: user.avatarURL(),
+      },
+      timestamp: new Date(),
+      footer: {
+        text: "Made by Zyner",
+        icon_url: interaction.client.user.displayAvatarURL(),
+      },
+    };
+    await interaction.reply({ embeds: [embed] });
+  },
 };

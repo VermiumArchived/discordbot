@@ -12,8 +12,8 @@ body:
     id: category
     attributes:
       label: Category
-      description: Where should we put this command? For example /fun meme
-      placeholder: ex. fun
+      description: Where should we put this command? For example /manage credits give
+      placeholder: ex. manage
     validations:
       required: true
   - type: input
@@ -26,8 +26,8 @@ body:
     id: command
     attributes:
       label: Command
-      description: What should we call this command? For example /fun meme
-      placeholder: ex. meme
+      description: What should we call this command? For example /manage credits give
+      placeholder: ex. give
     validations:
       required: true
   - type: textarea

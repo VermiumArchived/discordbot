@@ -1,5 +1,5 @@
 name: Command request
-about: Suggest an command for this project
+description: Suggest an command for this project
 title: "[Command]: "
 labels: ["enhancement", "command"]
 

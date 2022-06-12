@@ -14,7 +14,6 @@ body:
       label: Category
       description: Where should we put this command?
       placeholder: ex. /fun
-      value: "/"
     validations:
       required: true
   - type: textarea

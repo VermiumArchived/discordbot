@@ -1,7 +1,7 @@
-name: Command request
+name: Request a new command
 description: Suggest an command for this project
-title: "[Command]: "
-labels: ["enhancement", "command"]
+title: "[New Command]: "
+labels: ["enhancement", "new-command"]
 
 body:
   - type: markdown

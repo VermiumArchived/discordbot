@@ -40,7 +40,7 @@ body:
           - **OS**: Ubuntu 20.04
           - **Node**: 13.14.0
           - **npm**: 7.6.3
-          - **xyter**: 7d02cf9b8d2d4b587aa6695591747b38c197d9e4
+          - **xyter**: [7d02cf9b8d2d4b587aa6695591747b38c197d9e4]
       value: |
         - OS: `lsb_release -d`
         - Node: `node -v`

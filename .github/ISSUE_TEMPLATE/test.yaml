@@ -22,8 +22,7 @@ body:
     attributes:
       label: What should the command do?
       description: Please tell us your concept, how it should work, and if there should be any additional features.
-      placeholder: Tell us what you see!
-      value: "I would like to have a meme command, that would make my members laugh and communicate more! I would like it to gather memes from the subreddit r/memes. And display the image with the title and up/down votes."
+      placeholder: "I would like to have a meme command, that would make my members laugh and communicate more! I would like it to gather memes from the subreddit r/memes. And display the image with the title and up/down votes."
     validations:
       required: true
   - type: checkboxes

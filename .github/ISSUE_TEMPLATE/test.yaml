@@ -7,12 +7,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report! We will use `/manage credits give` as an example for our placeholders.
   - type: input
     id: category
     attributes:
       label: Category
-      description: Where should we put this command? For example /manage credits give
+      description: Where should we put this command?
       placeholder: ex. manage
     validations:
       required: true
@@ -20,13 +20,13 @@ body:
     id: group
     attributes:
       label: Group
-      description: Does this command belong to this group? For example /manage credits give
+      description: Does this command belong to this group?
       placeholder: ex. credits
   - type: input
     id: command
     attributes:
       label: Command
-      description: What should we call this command? For example /manage credits give
+      description: What should we call this command?
       placeholder: ex. give
     validations:
       required: true
@@ -35,7 +35,7 @@ body:
     attributes:
       label: What should the command do?
       description: Please tell us your concept, how it should work, and if there should be any additional features.
-      placeholder: "I would like to have a meme command, that would make my members laugh and communicate more! I would like it to gather memes from the subreddit r/memes. And display the image with the title and up/down votes."
+      placeholder: "I would like to have a command to give users credits, that would make it easier for me to administrate credits! I would like it to add a specified amount of credits to specified user, without taking credits from the executer. Command should require Manage Guild permission. When successful, it should return something like `added <amount> credits to <user>!`."
     validations:
       required: true
   - type: checkboxes

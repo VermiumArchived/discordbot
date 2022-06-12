@@ -35,7 +35,7 @@ body:
     attributes:
       label: What should the command do?
       description: Please tell us your concept, how it should work, and if there should be any additional features.
-      placeholder: "I would like to have a command to give users credits, that would make it easier for me to administrate credits! I would like it to add a specified amount of credits to specified user, without taking credits from the executer. Command should require Manage Guild permission. When successful, it should return something like `added <amount> credits to <user>!`."
+      placeholder: "I would like to have a command to give users credits, that would make it easier for me to administrate credits! I would like it to add a specified amount of credits to specified user, without taking credits from the executer. Command should require Manage Guild permission. When successful, it should return something like (added <amount> credits to <user>!)."
     validations:
       required: true
   - type: checkboxes

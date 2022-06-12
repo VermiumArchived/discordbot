@@ -12,16 +12,24 @@ body:
     id: category
     attributes:
       label: Category
-      description: Where should we put this command?
-      placeholder: ex. /*fun*
+      description: Where should we put this command? For example /fun meme
+      placeholder: ex. fun
     validations:
       required: true
   - type: input
     id: group
     attributes:
       label: Group
-      description: Does this command belong to this group?
-      placeholder: ex. /manage *credits* give
+      description: Does this command belong to this group? For example /manage credits give
+      placeholder: ex. credits
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: What should we call this command? For example /fun meme
+      placeholder: ex. meme
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
